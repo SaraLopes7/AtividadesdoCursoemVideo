@@ -14,10 +14,17 @@
     <!--external indica que é um link para outro site que não faz parte do seu site.-->
     <!--há outros tipos de target e rel, estão no capítulo 10 do pdf do Guanabara.-->
         <p>Você também pode acessar meu <a href="https://www.linkedin.com/in/sara-r-a-lopes-98b72423a/" target="_blank" rel="external">perfil do LinkedIn</a></p>
-    <h2>Usando Links Internos</h2>
+    <h1>Usando Links Internos</h1>
         <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
         <p>Você também pode acessar a minha <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
     <!-- _self quer dizer que ta referenciando ao mesmo site-->
     <!--next faz a "hierarquia" da página, dizendo oq vem dps-->
+    <h1>Links Para Downloads</h1>
+    <ul>
+        <li><a href="livros/pdf1.pdf" download="pdf1.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+    <!-- usado para fazer o download diretamente, mas isso depende do navegador que vc usa. No caso do chrome, ele abre o arquivo-->
+        <li><a href="livros/pdf1.zip" download="pdf1.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    <!-- no formato zip ele faz o download direto-->
+    </ul>
 </body>
 </html>
