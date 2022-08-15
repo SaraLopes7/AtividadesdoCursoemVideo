@@ -5,40 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras Formatações</h1>
-    <h2>Código-fonte / Pré Formatação</h2>
-        <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem Javascript</p>
-    <!--code deixa a fonte monoespaçada, isto é elas tem o mesmo espaço uma da outra, cada letra ocupa o mesmo espaço-->
-        <pre>
-            <code>
-    num = int(input('Digite um número')) if num % 2 == 0;
-        print(f'O número {num} é PAR')
-    else:
-        print(f'O número {num} é Ìmpar')
-    print('Fim do Programa')
-            </code>
-        </pre>
-    <!-- tag code n identa o código, mas existe a tag pre que considera oq vc escreve exatamente como ta no código-->
-    <h2>Citações Simples</h2>
-        <p>Como diria o pai de um amigo: <q> o computador é um burro muito rápido</q></p>
-    <!-- a tag q deixa o texto entre aspas de citação que é mais bonitinha-->
-    <h2>Citações Completas</h2>
-        <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
-        <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
-    <!--Esse link não vai aparecer visualmente no site, mas vai ser usado pelos mecanismos de busca dos navegadores-->
-            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
-        </blockquote>
-    <!--a tag blockquote vai dar uma quebra de linha e deixar a citção com um espaço incial, como se tivesse dado um tab-->
-    <h2>Abreviações</h2>
-    <!--abbr deixa uns potinhos feios em baixo para sinalizar que é uma abreviação. no title vc põe o significado da sigla, ai quando passa o mouse em cima, aparece-->
-        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto invertido</h2>
-    <!--bdo deixa o bagui todo invertido, muito feio-->
-        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
-        <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p>
-    <!--aq fica tudo normal-->    
-</body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+        <ol type="1">
+    <!--type é o tipo. 1 é numérico-->
+            <li>Acordar</li>
+            <li>Ligar para o João</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a faculdade</li>
+            <li>Almoçar</li>
+            <li>Ir para o trabalho</li>
+            <li>Voltar para casa</li>
+            <li>Jantar</li>
+            <li>Dormir</li>
+        </ol>
+    <!--No HTML5 o /li é opcional-->
+    <h2>Listas Não Ordenadas</h2>
+        <ul type="disk">
+    <!--type=disk - bolinhas pretas
+        ype=circle - bolinhas vazias
+        type=square - quadradinhos-->
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul>
+    <h2>Listas Mistas</h2>
+    <h3>Minhas Linguagens Favoritas</h3>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+    <!--depois do type, da p por um start e dizer dq número vc quer começar, ou a posição da letra. tipo e=5, ai seria start="5"-->
+                <li>Clipper
+                <li>Visual basic
+                <li>Fortran
+                <li>Delphi
+            </ol>
+            <li>Novas</li>
+            <ol type="i">
+                <li>PHP
+                <li>Python
+                <li>javaScript
+                <li>Kotlin
+            </ol>
+        </ol>
+        <h3>Meus Jogos Favoritos</h3>
+        <ol>
+            <li>Nintendo</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                <ul type="circle">
+                    <li>Mario Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+            <li>Super Nintendo</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>Final fantasy</li>
+                <li>castlevania</li>
+            </ul>
+        </ol>
+    <h2>Listas de Definições</h2>
+    <!--È como se fosse um dicionário, que vc coloca a palavra e o significado dela-->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+        </dl>
+    </body>
 </html>
