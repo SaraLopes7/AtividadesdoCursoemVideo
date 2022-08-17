@@ -19,5 +19,21 @@
         <img src="imagens/foto-g.png" alt="Foto flexível grande">
     </picture>
     <!--picture envelopa para organizar os sources-->
+    <h1>Reproduzindo Àudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/happyMistake.mp3" controls autoplay></audio>-->
+    <!-- se colocar o audio desse jeito pode n pegar em alguns navegadores-->
+    <!-- formatos de áudio compatíveis com navegadores, mp3, ogg, wav-->
+    <audio preload="metadata" autoplay controls>
+    <!-- da p por o parâmetro loop, que vai fazer sua música voltar a tocar sempre que acabar-->
+        <!--o autoplay n funcionou cmg-->
+    <!-- preload = auto, ele só carregao site dps que carregar sua mídiatoda, é periculo. o metadata mostraas informações de arquivo como suaduração. none n faz nada-->
+    <!-- se o navegador n conseguir carregar o mp3, toca o ogg, se n conseguir tbm, toca o wav-->
+        <source src="midia/happyMistake.mp3" type="audio/mpeg">
+        <source src="midia/happyMistake.ogg" type="audio/ogg">
+        <source src="midia/happyMistake.wav" type="audio/wav">
+    <!--os types de audio estão disponíveis no github do Guanabara-->
+    <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/happyMistake.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
 </body>
 </html>
