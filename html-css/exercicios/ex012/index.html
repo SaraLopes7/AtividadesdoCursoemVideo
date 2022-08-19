@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Inserindo Vídeos</title>
 </head>
 <body>
-    
+    <h1>Inserindo Vídeos Hospedados localmente</h1>
+        <p>Estes vídeos estão hospedados no meu próprio servidor</p>
+    <!--
+    <video src="midia/videoPexels.mp4" width="500" controls></video>
+    Modo errado pq só da p upar um formato de vídeo
+    -->
+    <video width="560" poster="imagens/fotocafe.jpg" controls autoplay loop>
+        <source src="midia/video.mp4" type="video/mp4">
+        <p>seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <!--com o source da p vc upar varios tipos de videos, assim ficando mais compativel com todo tipo de navegador-->
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gC8Rzemch_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>

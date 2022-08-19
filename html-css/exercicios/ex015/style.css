@@ -1,0 +1,15 @@
+   @charset "UTF-8";
+/* o @ é uma regra, essa é para ser compatível com acentuação, igual ao html*/
+        
+        body{
+            background-color: lightskyblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        h1{
+            color: rgb(250, 0, 62);
+            background-color: blue;
+        }
+        p{
+            text-align: justify;
+        }
