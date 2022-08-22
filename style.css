@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+   header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    background: black;
+    height: 100px;
+    border-radius: 30px;
+    text-align: center;
+   }
+   footer {
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+   }
